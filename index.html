@@ -119,10 +119,10 @@
 				<li><h3>PQRS</h3></li>
 			</ul>
 		</div>
-		<form class="formP">
+		<form class="formP" id="formPQR">
 			<ul>
 				<li>
-					<select>
+					<select name="nivel">
 						<option>--Selecciona tu nivel--</option>
 						<option>-- A1 --</option>
 						<option>-- A2 --</option>
@@ -131,7 +131,7 @@
 					</select>
 				</li>
 				<li>
-					<select>
+					<select name="modalidad">
 						<option>--Selecciona tu Modalidad--</option>
 						<option>-- Grupal --</option>
 						<option>-- Apoyo Escolar o Universitario --</option>
@@ -143,7 +143,7 @@
 					</select>
 				</li>
 				<li>
-					<select>
+					<select name="pqr">
 						<option>--Selecciona un Opción--</option>
 						<option>-- Petición --</option>
 						<option>-- Queja / Reclamo --</option>
@@ -154,22 +154,22 @@
 					</select>
 				</li>
 				<li>
-					<input type="text" placeholder="Nombre Completo">
+					<input type="text" placeholder="Nombre Completo" name="nombre_completo" required>
 				</li>
 				<li>
-					<input type="text" placeholder="Numero de Documento">
+					<input type="text" placeholder="Numero de Documento" name="documento" required>
 				</li>
 				<li>
-					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Email" name="email" required>
 				</li>
 				<li>
-					<input type="text" placeholder="Telefono">
+					<input type="text" placeholder="Teléfono" name="celular" required>
 				</li>
 				<li>
-					<textarea placeholder="Mensaje"></textarea>
+					<textarea placeholder="Mensaje" name="mensaje" required></textarea>
 				</li>
 				<li>
-					<input type="button" value="Enviar">
+					<input type="button" value="Enviar" id="btnContactarPQR">
 				</li>
 			</ul>
 		</form>
@@ -224,33 +224,33 @@
 		</ul>
 	</div>
 	<div>
-		<form class="form">
+		<form class="form" id="formContacto">
 			<ul>
 				<li>
 					<h3>Inscribete aqui!</h3>
 				</li>
 				<li>
 					<img src="img/form/man.png">
-					<input type="text" placeholder="Como te llamas?">
+					<input type="text" placeholder="Como te llamas?" name="nombre_completo" required>
 				</li>
 				<li>
 					<img src="img/form/mail.png">
-					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Email" name="email" required>
 				</li>
 				<li>
 					<img src="img/form/cel.png">
-					<input type="numeric" placeholder="Telefono">
+					<input type="numeric" placeholder="Telefono" name="celular" required>
 				</li>
 				<li>
 					<img src="img/form/chat.png"> 
-					<textarea placeholder="Dejanos tus datos"></textarea>
+					<textarea placeholder="Tienes alguna duda o comentario, escribelo aquí" name="comentario" required></textarea>
 				</li>
 				<li>
-					<input type="checkbox">
+					<input type="checkbox" name="tra_datos" checked>
 					<h4>Autorizo manejo de datos</h4>
 				</li>
 				<li>
-					<input type="button" value="Enviar">
+					<input type="button" value="Enviar" id="btnContactar">
 				</li>
 			</ul>
 		</form>
@@ -567,5 +567,26 @@
 		<div class="linea"></div>
 		<h5>Bridge Club de Idiomas © 2018</h5>
 	</div>
+	<script type="text/javascript" src="js_data/jquery.js"></script>
+    <script type="text/javascript" src="js_data/prototipos/prototipos.js"></script>
+    <script type="text/javascript" src="js_data/funciones/utilidades.js"></script>
+    <script type="text/javascript" src="js_data/funciones/peticiones_ajax.js"></script>
+    <script type="text/javascript" src="js_data/funciones/formatos.js"></script>
+    <script type="text/javascript" src="js_data/funciones/CrudBase.js"></script>
+    <script type="text/javascript" src="js_data/index/registro.js"></script>
+    <script type="text/javascript" src="js_data/globales.js"></script>
+	<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/5b5e8bfde21878736ba26e14/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+		</script>
+	<!--End of Tawk.to Script-->
 </body>
 </html>
