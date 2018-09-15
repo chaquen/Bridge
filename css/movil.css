@@ -28,7 +28,7 @@ body {
 	width: 155px;
 	height: 120px;
 	position: absolute;
-	margin-left: 100px;
+	margin-left: 20px;
 	z-index: 1000;
 	cursor: pointer;
 }
@@ -62,7 +62,7 @@ body {
 }
 .menu ul {
 	 list-style:none;
-	 width: 60%;
+	 width: 70%;
 	 margin: auto;
 	 display: table;
 }
@@ -145,7 +145,7 @@ body {
 /*Estilos del slide*/
 .slider {
 	width: 100%;
-	height: 700px;
+	height: 550px;
 	overflow: hidden;
 }
 
@@ -153,20 +153,20 @@ body {
 	display: flex;
 	padding: 0;
 	width: 400%;
-	height: 700px;
+	height: 550px;
 	
 	animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
 	width: 100%;
-	height: 700px;
+	height: 550px;
 	list-style: none;
 }
 
 .slider img {
 	width: 100%;
-	height: 700px;
+	height: 550px;
 }
 
 @keyframes cambio {
@@ -184,14 +184,10 @@ body {
 }
 
 .form {
-	width: 300px;
-	padding:50px 30px;
+	width: 100%;
 	padding-bottom: 50px; 
 	display: table;
 	text-align: center;
-	margin-top: -680px;
-	margin-left: 950px;
-	position: absolute;
 	z-index: 1000;
 	background-color: rgba(1,1,1,0.8);
 }
@@ -215,8 +211,9 @@ body {
 }
 .form li img {
 	float: left;
-	width: 35px;
-	height: 35px;
+	width: 50px;
+	height: 50px;
+	margin-left: 50px;
 }
 .form li h4 {
 	float: left;
@@ -226,8 +223,8 @@ body {
 	text-shadow: 1px 1px 2px black;
 }
 .form li input[type=text], input[type=numeric] {
-	height: 30px;
-	width: 245px;
+	height: 50px;
+	width: 80%;
 	text-shadow: 1px 1px 1px black;
 	font-size: 20px;
 	margin-left: 5px;
@@ -246,7 +243,7 @@ body {
 }
 .form li input[type=checkbox] {
 	float: left;
-	margin-left: 30px;
+	margin-left: 35%;
 	box-shadow: 1px 1px 2px black;
 }
 .form li input[type=button] {
@@ -262,7 +259,7 @@ body {
 }
 .form li textarea {
 	height: 100px;
-	width: 245px;
+	width: 80%;
 	text-shadow: 1px 1px 1px black;
 	font-size: 20px;
 	margin-left: 5px;
@@ -353,7 +350,7 @@ body {
 	font-family: sensei;
 	margin-top: 20px;
 	margin-left: 5px;
-	font-size: 25px;
+	font-size: 17px;
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -721,8 +718,73 @@ body {
 	border-radius: 7px;
 }
 
-@media screen and (min-width:330px) and (max-width:640px) {
-    .form {
-    	display: none;
-    }
+.view {
+   width: 31%;
+   height: 200px;
+   margin: 8px;
+   margin-top: 50px;
+   float: left;
+   border: 3px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 2px 5px 9px black;
+   cursor: pointer;
+   background-image: url('../fondoAzul.png');
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+.view .mask,.view .content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 16px;
+   text-shadow: 1px 1px 2px black;
+   position: relative;
+   color: #fff;
+   padding: 10px 20px 20px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+}
+.view a.info: hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+#btnPis {
+   width: 100%;
+   height: 550px;
 }
