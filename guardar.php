@@ -11,9 +11,9 @@
 	$respuesta = false;
 	foreach ($datosFormLand->{"data"} as $datosFormLand) {
 	 	$statement->bindParam(1, $datosFormLand->{"idiomas"}, PDO::PARAM_STR);
-	 	$statement->bindParam(1, $datosFormLand->{"estrato"}, PDO::PARAM_INT);
-	 	$statement->bindParam(1, $datosFormLand->{"porque"}, PDO::PARAM_STR);
-	 	$statement->bindParam(1, $datosFormLand->{"codigo"}, PDO::PARAM_INT);
+	 	$statement->bindParam(2, $datosFormLand->{"estrato"}, PDO::PARAM_INT);
+	 	$statement->bindParam(3, $datosFormLand->{"porque"}, PDO::PARAM_STR);
+	 	$statement->bindParam(4, $datosFormLand->{"codigo"}, PDO::PARAM_INT);
 	 	$respuesta = $statement->execute();
 	 } 
 
