@@ -1,0 +1,7 @@
+
+CUENTA DE COREO	
+ user: chat@bridgeclubdeidiomas.com	
+ pass: bridge2018
+CUENTA TAWK TO
+ user: chat@bridgeclubdeidiomas.com
+ pass: bci2018
