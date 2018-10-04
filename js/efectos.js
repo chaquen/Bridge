@@ -3,12 +3,10 @@ $(document).ready(function(){
   $('.salir, .logoMenu').click(function(){
     $('.mascara').fadeOut('slow');
   });
-
   $('.quienSomos').click(function(){
     $('#formPqr').fadeOut('slow');
     $('#somos').toggle('bounce');
   });
-
   $('.menuIngles').click(function(){
     $('#formPqr').fadeOut('slow');
     $('#ingles').toggle('clip');
@@ -55,5 +53,7 @@ $(document).ready(function(){
 
   $('#btnCon').click(function(){
     $('#conversacion').toggle('scale');
-  });	
+  });
+
+ 
 });

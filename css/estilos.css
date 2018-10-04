@@ -2,6 +2,14 @@
 	padding: 0;
 	margin: 0;
 }
+@font-face {
+    font-family: "edo";
+    src: url(../fonts/edo.ttf);
+}
+@font-face {
+    font-family: "sensei";
+    src: url(../fonts/sensei.ttf);
+}
 li {
 	list-style: none;
 }
@@ -12,60 +20,132 @@ html {
 body {
 	width: 100%;
 	height: 100%;
-	background-image: url('../img/fondoAz.png');
+	background-image: url('../img/footer.png');
 	background-attachment: fixed;
-	background-size: 100% 100%;
+	background-size: 120% 120%;
 }
-
-.nav {
-	width: 100%;
-	display: table;
-	background-color: rgba(255,255,255,0.5);
-
-}
-.nav ul {
-	width: 80%;
-	margin: auto;
-	display: table;
-}
-.nav ul li {
-	float: left;
-	width: 15%;	
-	margin: 2px;
-	margin-top: 35px;
+.logo {
+	width: 155px;
+	height: 120px;
+	position: absolute;
+	margin-left: 100px;
+	z-index: 1000;
 	cursor: pointer;
 }
-.nav ul li:first-child {
-	margin-top: 0;
-}
-.nav li img {
-	width: 200px;
-	height: 150px;
-}
-.nav li h3 {
-	padding-top: 15px;
+.salirVentana {
+	right: 50px;
+	margin-top: 30px;
+	width: 60px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
 	text-align: center;
-	padding-bottom: 15px;
-	font-family: calibri;
+	position: fixed;
 	cursor: pointer;
-	font-size: 22px;
-	border-right: 4px solid red;
-	-webkit-transform: skew(-20deg);
-     -moz-transform: skew(-20deg);
-     -ms-transform: skew(-20deg);
-     -o-transform: skew(-20deg);
-     transform: skew(-20deg);
-     color: white;
-     text-shadow: 2px 2px 3px black;
+	color: red;
+	font-family: edo;
+	font-size: 45px;
+	border-radius: 100%;
+	border: 5px solid blue;
 }
-.nav li:last-child h3 {
-	border-right: none;
+.salirVentana:hover {
+	color: blue;
+	border: 5px solid red;
 }
+.imgVentanaEm {
+	width: 100%;
+}
+.menu {
+	width: 100%;
+	background-color: white;
+	display: table;	
+}
+.menu ul {
+	 list-style:none;
+	 width: 60%;
+	 margin: auto;
+	 display: table;
+}
+
+/* items del menu */
+
+.menu ul li {
+	 width: 24%;
+	 text-align: center;
+}
+
+/* enlaces del menu */
+
+.menu ul a {
+	 display:block;
+	 color:black;
+	 text-decoration:none;
+	 font-weight:400;
+	 font-size:30px;
+	 padding:12px 0px;
+	 font-family: sensei;
+	 text-transform:uppercase;
+	 letter-spacing:1px;
+}
+
+/* items del menu */
+
+.menu ul li {
+	 position:relative;
+	 float:left;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+.menu ul li:hover a {
+	color: white;
+	text-shadow: 2px 2px 3px black;	
+	background-color: rgba(128,128,128,0.7);
+}
+
+/* menu desplegable */
+
+.menu ul ul {
+	 display:none;
+	 position:absolute;
+	 top:100%;
+	 left:0;
+}
+
+/* items del menu desplegable */
+
+.menu ul ul li {
+	 float:none;
+	 width:250px;
+	 border-right: none;
+}
+
+/* enlaces de los items del menu desplegable */
+
+.menu ul ul a {
+	 line-height:120%;
+	 padding:10px 15px;
+	 font-size: 20px;
+}
+.menu ul ul li a {
+	color : white;
+
+}
+.menu ul ul li:hover a {
+	color: red;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+.menu ul li:hover > ul {
+ 	display:block;
+}
+
 
 /*Estilos del slide*/
 .slider {
 	width: 100%;
-	height: 100%;
+	height: 700px;
 	overflow: hidden;
 }
 
@@ -73,20 +153,20 @@ body {
 	display: flex;
 	padding: 0;
 	width: 400%;
-	height: 100%;
+	height: 700px;
 	
 	animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
 	width: 100%;
-	height: 100%;
+	height: 700px;
 	list-style: none;
 }
 
 .slider img {
 	width: 100%;
-	height: 100%;
+	height: 700px;
 }
 
 @keyframes cambio {
@@ -105,15 +185,15 @@ body {
 
 .form {
 	width: 300px;
-	padding:40px 30px;
-	padding-bottom: 59px; 
+	padding:50px 30px;
+	padding-bottom: 50px; 
 	display: table;
 	text-align: center;
-	margin-top: -618px;
+	margin-top: -680px;
 	margin-left: 950px;
 	position: absolute;
 	z-index: 1000;
-	background-color: rgba(0,0,128,0.8);
+	background-color: rgba(1,1,1,0.8);
 }
 .form ul {
 	width: 100%;
@@ -126,10 +206,11 @@ body {
 }
 .form li h3 {
 	background-color: blue;
+	font-family: sensei;
 	color: white;
 	padding-top: 14px;
 	padding-bottom: 14px;
-	font-family: calibri;
+	font-size: 30px;
 	box-shadow: 4px 4px 6px black;
 }
 .form li img {
@@ -141,7 +222,7 @@ body {
 	float: left;
 	color: white;
 	margin-left: 5px;
-	font-family: calibri;
+	font-family: edo;
 	text-shadow: 1px 1px 2px black;
 }
 .form li input[type=text], input[type=numeric] {
@@ -151,9 +232,10 @@ body {
 	font-size: 20px;
 	margin-left: 5px;
 	border-radius: 5px;
+	font-family: sensei;
 	background-color: rgba(128,128,128,0.5);
 	box-shadow: 4px 4px 6px black;
-	color: blue;
+	color: white;
 }
 .form li input::placeholder {
 	color: white;
@@ -164,8 +246,7 @@ body {
 }
 .form li input[type=checkbox] {
 	float: left;
-	margin-top: 5px;
-	margin-left: 50px;
+	margin-left: 30px;
 	box-shadow: 1px 1px 2px black;
 }
 .form li input[type=button] {
@@ -174,6 +255,8 @@ body {
 	background-color: red;
 	color: white;
 	font-size: 18px;
+	font-family: edo;
+	text-shadow: 4px 4px 6px black;
 	cursor: pointer;
 	box-shadow: 4px 4px 6px black;
 }
@@ -183,15 +266,16 @@ body {
 	text-shadow: 1px 1px 1px black;
 	font-size: 20px;
 	margin-left: 5px;
+	font-family: sensei;
 	border-radius: 5px;
 	background-color: rgba(128,128,128,0.5);
-	color: blue;
+	color: white;
 	box-shadow: 4px 4px 6px black;
 }
 .form li textarea::placeholder {
 	color: white;
 	font-size: 18px;
-	font-family: calibri;
+	font-family: sensei;
 	height: 30px;
 	padding-top: 10px;
 	padding-bottom: 60px;
@@ -204,7 +288,7 @@ body {
 	padding-bottom: 30px;
 }
 .section h1 {
-	font-family: calibri;
+	font-family: sensei;
 	font-size: 50px;
 	margin-top: 50px;
 	margin-bottom: 30px;
@@ -212,10 +296,11 @@ body {
 	background-image: url('../img/fondoRojo.png');
 	background-attachment: fixed;
 	background-size: 100% 100%;
-	color: white;
-	text-shadow: 2px 2px 3px black;
+	text-shadow: 2px 2px 3px white;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	color: #0683EA;
+	text-shadow: 2px 2px 4px black;
 }
 
 .footer {
@@ -227,18 +312,26 @@ body {
 	background-size: 100% 100%;
 	text-align: center;
 }
-.footer h1, h2, h3, h4, h5, h6 {
+.footer h1 {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-family: edo;
+}
+.footer h2 {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-family: sensei;
+}
+.footer h4, h3, h5 {
+	margin-top: 20px;
+	font-family: calibri;
 	color: white;
 	text-shadow: 1px 1px 2px black;
-	font-family: calibri;
-}
-.footer h4, h3 {
-	margin-top: 20px;
 }
 .footer ul {
-	width: 70%;
+	width: 80%;
 	display: table;
-	margin-left: 15%;
+	margin-left: 10%;
 	padding-top: 50px;
 	float: left;
 }
@@ -257,28 +350,26 @@ body {
 .footer li h4 {
 	float: left; 
 	color: white;
-	font-family: calibri;
+	font-family: sensei;
 	margin-top: 20px;
 	margin-left: 5px;
-	font-size: 22px;
+	font-size: 25px;
 	text-shadow: 2px 2px 3px black;
 }
 
 .mascara {
-	
 	top: 0;
 	position: fixed;
 	z-index: 2000;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(1,1,1,0.9);
+	background-color: rgba(1,1,1,1);
 	overflow-x: hidden;
 }
 #somos {
 	display: none;
 }
 .ventanaSo {
-	
 	width: 70%;
 	height: 90%;
 	margin-left: 20%;
@@ -287,7 +378,7 @@ body {
 	background-size: 100% 100%;
 }
 #ingles {
-	background-image: url('../img/5.png');
+	background-image: url('../img/6.png');
 	background-size: 100% 100%;
 	display: none;
 }
@@ -303,28 +394,30 @@ body {
 	color: white;
 	margin-top: 50px;
 	text-align: center;
-	font-family: calibri;
+	font-family: sensei;
 	background-color: rgba(1,1,1,0.8);
 }
 .dialogo h2 {
 	font-size: 30px;
 	padding-bottom: 20px;
+	color: yellow;
+	/*text-shadow: 1px 1px 1px gray;*/
 }
 .dialogo p {
 	font-size: 18px;
 }
 .logoMas {
-	width: 210px;
-	height: 160px;
+	width: 170px;
+	height: 130px;
 	float: left;
 	margin-left: 50px;
 	margin-top: 10px;
-	cursor: pointer;
+	position: absolute;
 }
 .contactoMas {
 	float: right;
 	display: table;
-	margin-top: 50px;
+	margin-top: 150px;
 	margin-right: 20px;
 	cursor: pointer;
 }
@@ -469,20 +562,20 @@ body {
 	padding-bottom: 30px;
 	margin-top: 50px;
 	font-size: 50px;
-	font-family: calibri;
+	font-family: edo;
 	background-image: url('../img/fondoRojo.png');
 	background-attachment: fixed;
 	background-size: 100% 100%;
-	color: white;
-	text-shadow: 2px 2px 3px black;
+	color: #0A6DC0;
+	text-shadow: 2px 2px 4px black;
 }
 .puente h3 {
 	width: 80%;
 	padding: 20px 20px;
 	color: white;
-	text-shadow: 2px 2px 4px black;
+	text-shadow: 2px 2px 1px black;
 	border-radius: 10px;
-	font-family: calibri;
+	font-family: sensei;
 	background-color: rgba(255,255,255,0.3);
 	font-size: 35px;
 	margin: auto;
@@ -503,7 +596,7 @@ body {
 .puente li h4 {
 	width: 100%;
 	font-size: 25px;
-	font-family: calibri;
+	font-family: edo;
 	text-shadow: 2px 2px 3px black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -512,7 +605,7 @@ body {
 .puente li p {
 	background-color: rgba(255,255,255,0.6);
 	font-size: 20px;
-	font-family: calibri;
+	font-family: sensei;
 	text-shadow: 1px 1px 2px white;
 	padding: 20px;
 	margin-top: 15px;
@@ -537,16 +630,15 @@ body {
 	background-size: 100% 100%;
 }
 .formP {
-	width: 40%;
+	width: 30%;
 	display: table;
 	margin: auto;
 	margin-top: 50px;
 	text-align: center;
 	padding: 30px 30px;
 	margin-bottom: 20px;
-	background-image: url('../img/fondoAz.png');
-	background-attachment: fixed;
-	background-size: 100% 100%;
+	background-color: rgba(1,1,1,0.8);
+	border-radius: 10px;
 }
 .formP ul {
 	width: 90%;
@@ -566,6 +658,7 @@ body {
 	background-color: rgba(1,1,1,0.7);
 	color: white;
 	font-size: 16px;
+	font-family: sensei;
 }
 .formP textarea {
 	height: 100px;
@@ -577,12 +670,12 @@ body {
 	border: 1px solid red;
 	cursor: pointer;
 	box-shadow: 2px 2px 4px black;
+	font-family: edo;
 }
 .formP li input::placeholder {
 	background-color:rgba(1,1,1,0.7);
 	color: white;
 	font-size: 16px;
-
 }
 .formP textarea::placeholder {
 	color: white;
@@ -593,8 +686,43 @@ body {
 	background-color: rgba(1,1,1,0.9);
 }
 #formPqr {
-	background-image: url('../img/fondoRojo.png');
+	background-image: url('../img/puente1.jpg');
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	display: none;
+}
+.redesHover {
+	right: 0px;
+	position: absolute;
+	width: 280px;
+	height: 65px;
+	border: 1px dashed green;
+	overflow: hidden;
+}
+#btnFace:hover {
+	cursor: pointer;
+	width: 280px;
+}
+.redesHover img {
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+.redesHover h4 {
+	text-decoration: none;
+	color: white;
+	font-family: sensei;
+	background-color: black;
+	padding: 3px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 5px;
+	font-size: 20px;
+	border-radius: 7px;
+}
+
+@media screen and (min-width:330px) and (max-width:640px) {
+    .form {
+    	display: none;
+    }
 }

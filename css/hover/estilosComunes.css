@@ -1,14 +1,15 @@
 .view {
-   width: 30%;
-   height: 280px;
-   margin: 10px;
+   width: 19%;
+   height: 180px;
+   margin: 3px;
+   margin-top: 50px;
    float: left;
-   border: 10px solid #fff;
+   border: 3px solid #fff;
    overflow: hidden;
    position: relative;
    text-align: center;
-   box-shadow: 2px 2px 3px black;
-   cursor: default;
+   box-shadow: 2px 5px 9px black;
+   cursor: pointer;
    background-image: url('../fondoAzul.png');
    background-attachment: fixed;
    background-size: 100% 100%;
@@ -63,8 +64,11 @@
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
 }
-#divPis {
-   margin-left: 15%;
-   width: 70%;
-   height: 400px;
+#btnIc {
+   margin-left: 10%;
+}
+#btnPis {
+   margin-left: 22%;
+   width: 750px;
+   height: 450px;
 }
