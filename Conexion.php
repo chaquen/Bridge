@@ -2,8 +2,8 @@
 	class Conexion{
 		private $host = "localhost";
 		private $dbname = "mohansof_landingcorreo_bci";
-		private $user = "root";
-		private $password = "";
+		private $user = "mohansof_bci_us";
+		private $password = "sNGGzF@gI)Iw";
 		private $conexion = null;
 
 		public function getConexion(){
