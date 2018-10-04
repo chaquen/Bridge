@@ -1,7 +1,7 @@
 <?php 
 	class Conexion{
 		private $host = "localhost";
-		private $dbname = "landingcorreo_bci";
+		private $dbname = "mohansof_landingcorreo_bci";
 		private $user = "root";
 		private $password = "";
 		private $conexion = null;
